@@ -5,38 +5,251 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <div class="cursor"></div>
     <header>
-      <nav>
-        <div class="logo">
-         <a href="index.html"><img src="./images/logo.png" /></a>
-        </div>
-        <ul>
-          <li></li>
-        </ul>
-      </nav>
+      <div class="wrapper">
+        <nav>
+          <div class="logo">
+            <a href="index.html"><img src="./images/logo.png" /></a>
+          </div>
+
+          <div class="avatar">
+            <img src="./images/avatar.png" />
+          </div>
+        </nav>
+      </div>
     </header>
-    <section class="hero">
-      <div class="heroText">
-        <h1>Frontend Developer & Mentor</h1>
-        <p>I write code to define the structure and design of web pages, balance functional and aesthetic design, and ensure web design is optimized for smartphones.</p> 
-      </div>
-      <div class="avatar">
-        <img src="./images/avatar.png"/>
-      </div>
-      <div class="computer">
-        <img src="./images/system.svg"/>
+    <div class="wrapper">
+      <section class="hero">
+        <!-- <div class="wrapper"> -->
+        <div class="heroText">
+          <p class="firstTitle" id="front">Frontend Developer</p>
+          <p class="secondTitle">
+            I write code to define the structure and design of web pages,
+            balance functional and aesthetic design, and ensure web design is
+            optimized for smartphones.
+          </p>
         </div>
-
-    </section>
+        <div class="cvs">
+          <div class="firstTitle">
+            <p>ABOUT ME</p>
+          </div>
+          <div class="cv">
+            <ul class="leftCv">
+              <li><span>First Name Leyla</span></li>
+              <li><span>Last Name Mehtiyeva</span></li>
+              <li><span>Birthdate 18 May 2003</span></li>
+              <li><span>Nationality Azerbaijan</span></li>
+              <li><span>Experience 1+ years </span></li>
+              <li><span>Address Baku </span></li>
+            </ul>
+            <ul class="rightCv">
+              <li><span>Freelance Available</span></li>
+              <li><span>Languages English Turkish Azerbaijan</span></li>
+              <li><span>Phone +994 58 572 32 78</span></li>
+              <li><span>Email you@you.com</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="computer">
+          <img src="./images/system.svg" />
+        </div>
+      </section>
+    </div>
     <section class="about">
-     <div class="aboutText">
-      <h3>Hi, I’m Leyla. Nice to meet you.</h3>
-      <p>I've been coding for over 1 year to make website visitors easily interact with the page. I worked as a frontend developer in various startups.I’m very passionate about learning and applying new technologies.</p>
+      <div class="aboutText">
+        <h3>Hi, I’m Leyla. Nice to meet you.</h3>
+        <p>
+          I've been coding for over 1 year to make website visitors easily
+          interact with the page. I worked as a frontend developer in various
+          startups.I’m very passionate about learning and applying new
+          technologies.
+        </p>
       </div>
-
+      <div class="contentAbout">
+        <div class="contents">
+          <div class="content">
+            <div class="contentImage">
+              <img src="./images/code.png" />
+            </div>
+            <div class="contentText">
+              <p class="contentTitle">Front End Developer</p>
+              <p class="innerContent">
+                I like to code things from scratch, and enjoy bringing ideas to
+                life in the browser.
+              </p>
+              <p class="innerTitle">I have experience with:</p>
+              <p class="innerContent">HTML,CSS,Javascript,React,Git,Figma</p>
+            </div>
+            <div class="contentText">
+              <p class="innerTitle">Dev Tools:</p>
+              <p class="innerContent">Github,Figma</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <section class="education">
+      <div class="wrapper">
+        <div class="firstTitle"><p>Education and Experience</p></div>
+
+        <div class="partsOfEducation">
+          <div class="workPart">
+            <div class="classes">
+              <div class="oneClass">
+                <div class="educationIcon">
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div class="aboutClass">
+                  <div class="dateOfClass">
+                    <p>2022-2023</p>
+                  </div>
+                  <div class="textOfClass">
+                    <h3>
+                      Unec Startup Incubator<span
+                        >- Azerbaijan State University of Economics</span
+                      >
+                    </h3>
+
+                    <p>Frontend Developer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="oneClass">
+                <div class="educationIcon">
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div class="aboutClass">
+                  <div class="dateOfClass">
+                    <p>2021-2022</p>
+                  </div>
+                  <div class="textOfClass">
+                    <h3>Frontend mentor<span>- Coders Azerbaijan</span></h3>
+
+                    <p>Help junior developers hone their skills.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="educationPart">
+            <div class="classes">
+              <div class="oneClass">
+                <div class="educationIcon">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="aboutClass">
+                  <div class="dateOfClass">
+                    <p>2020-2024</p>
+                  </div>
+                  <div class="textOfClass">
+                    <h3>
+                      Bachelor's degree<span
+                        >- Azerbaijan State University of Economics</span
+                      >
+                    </h3>
+
+                    <p>
+                      Higher education in the field of information technology
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="oneClass">
+                <div class="educationIcon">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="aboutClass">
+                  <div class="dateOfClass">
+                    <p>2021</p>
+                  </div>
+                  <div class="textOfClass">
+                    <h3>Frontend developer<span>- Coders Azerbaijan</span></h3>
+
+                    <p>16 weeks intensive bootcamp</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="recentWorks">
+      <div class="wrapper">
+        <div class="recentTitle">
+          <p class="firstTitle">My Recent Work</p>
+          <p class="secondTitle">
+            Here are a few past projects I've worked on.
+          </p>
+        </div>
+        <div class="works">
+          <div class="work">
+            <img src="./images/demoimg.png" />
+            <div class="aboutWork">
+              <p>About this website</p>
+              <div class="visit">
+                <a href="#"
+                  >Visit Website <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/demoimg.png" />
+            <div class="aboutWork">
+              <p>About this website</p>
+              <div class="visit">
+                <a href="#"
+                  >Visit Website <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/demoimg.png" />
+            <div class="aboutWork">
+              <p>About this website</p>
+              <div class="visit">
+                <a href="#"
+                  >Visit Website <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="wrapper">
+        <div class="foot">
+          <div class="mediaLogo">
+            <img src="./images/logo.png" />
+          </div>
+
+          <div class="links">
+            <div class="link linkedin">
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="link whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="link gmail">
+              <i class="fa-solid fa-at"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>
