@@ -1,14 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  font-family: "Roboto", sans-serif;
 }
-::selection{
+::selection {
   background-color: #141c3a;
   color: #fff;
 }
+
+
 .cursor {
   background-color: #8713d4;
   position: fixed;
@@ -75,13 +79,19 @@ nav {
   width: 80%;
 }
 #front {
-  font-size: 40px;
+  font-size: 42px;
 }
 .firstTitle {
-  font-size: 32px;
-  color: #141c3a;
+  font-size: 34px;
+background: linear-gradient(
+    45deg,
+    #141c3a,
+    #00ff00);
+      -webkit-background-clip: text;
+  color: transparent;
   font-weight: 800;
   text-align: center;
+
 }
 .secondTitle {
   margin-top: 10px;
@@ -97,13 +107,19 @@ nav {
   height: 100%;
 }
 .computer {
-  width: 700px;
+
+  width: 70%;
   height: auto;
   object-fit: cover;
 }
 .computer img {
   width: 100%;
   height: 100%;
+}
+.computerPart{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 /* about */
 .about {
@@ -164,9 +180,8 @@ footer {
   height: 200px;
   display: flex;
   align-items: center;
- 
 }
-.foot{
+.foot {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -175,10 +190,10 @@ footer {
   display: flex;
   gap: 10px;
 }
-.link {
+.link ,.link a{
   background-color: transparent;
   transition: 0.3s ease;
-  color: #fff;
+  color: #fff ;
   border: 2px solid rgba(255, 255, 255, 0.5);
   font-size: 28px;
   cursor: pointer;
@@ -189,29 +204,28 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.link:hover {
+.link a:hover {
   background-color: #fff;
   color: rgb(12, 12, 115);
 }
-.whatsapp:hover {
+.whatsapp a:hover {
   color: #25d366;
 }
-.linkedin:hover {
+.linkedin a:hover {
   color: #0077b5;
 }
-.gmail:hover {
+.gmail a:hover {
   color: #6e07f3;
 }
 .mediaLogo {
   width: 100px;
   height: 100px;
-
 }
 .mediaLogo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-    border-radius: 50%;
+  border-radius: 50%;
 }
 /* education */
 .partsOfEducation {
@@ -341,10 +355,44 @@ footer {
   background-color: #6e07f3;
 }
 /* cv */
-.cvs{
+.cvs {
   margin: 100px 0;
 }
-.cv{
-  
+.cv {
+  margin-top: 10px;
+
   display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.leftCv {
+  width: 40%;
+}
+.rightCv {
+  width: 40%;
+}
+/* aboutme */
+#about {
+  background: linear-gradient(
+    45deg,
+    #141c3a,
+    #00ff00
+  ); 
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 36px;
+}
+
+.aboutMe li p {
+  font-size: 28px;
+  color: #666;
+}
+.aboutMe li {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.aboutMe li p:first-of-type {
+  width: 30%;
 }
