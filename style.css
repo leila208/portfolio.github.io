@@ -154,7 +154,7 @@ background: linear-gradient(
   text-align: center;
   border-radius: 5px;
   height: 500px;
-  width: 500px;
+  width: 50%;
   padding: 50px;
 }
 .contentTitle {
@@ -231,7 +231,7 @@ footer {
 .partsOfEducation {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 5%;
 }
 .education {
   margin-top: 500px;
@@ -297,12 +297,13 @@ footer {
   padding-top: 50px;
   width: 100%;
   display: flex;
+  gap: 10px;
   justify-content: space-between;
 }
 .work {
   border-radius: 5px;
-  width: 33%;
-  height: 300px;
+  width: 45%;
+  height: 250px;
   position: relative;
   overflow: hidden;
 }
@@ -330,6 +331,10 @@ footer {
 .aboutWork p {
   font-size: 24px;
 }
+.aboutText{
+  width: 60%;
+  text-align: center;
+}
 .work:hover img {
   transform: scale(1.2);
 }
@@ -356,7 +361,7 @@ footer {
 }
 /* cv */
 .cvs {
-  margin: 100px 0;
+  margin: 5% 0;
 }
 .cv {
   margin-top: 10px;
@@ -384,15 +389,236 @@ footer {
 }
 
 .aboutMe li p {
-  font-size: 28px;
+  font-size: 22px;
   color: #666;
 }
 .aboutMe li {
   display: flex;
   width: 100%;
   margin-top: 20px;
+  gap: 5px;
+  text-align: center;
 }
 
-.aboutMe li p:first-of-type {
+/* .aboutMe li p:last-of-type {
+ margin-left: 5%;
+} */
+/* responsive */
+@media  screen and (max-width: 1240px) {
+ .aboutMe li p {
+ margin-left: 5%;
+}
+  .oneClass{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media  screen and (max-width: 1140px) {
+ .aboutMe li p {
+font-size: 18px;
+}
+}
+@media  screen and (max-width: 1024px) {
+  .contentAbout{
+    width: 65%;
+  }
+  .oneClass{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+ .aboutMe li p {
+margin-left: 0;
+}
+.cv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftCv{
+  width: 100%;
+  
+}
+.rightCv{
+  width: 100%;
+}
+.aboutMe li p{
+  font-size: 25px;
+}
+/* .aboutMe li p:first-of-type{
   width: 30%;
+} */
+}
+@media  screen and (max-width: 768px) {
+  
+.mediaLogo{
+  width: 70px;
+  height: 70px;
+}
+.aboutWork p {
+  font-size: 20px;
+}
+.visit{
+  padding: 5px;
+  font-size: 18px;
+}
+  .works{
+    display: flex;
+    flex-direction: column;
+  }
+  .work{
+    width: 100%;
+    height: 150px;
+  }
+  /* .aboutMe li p:first-of-type {
+    width: 40%;
+} */
+.aboutMe li {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutMe p{width: 100%;}
+  .logo{
+    width: 150px;
+    height: 150px;
+  }
+    .avatar{
+    width: 150px;
+    height: 150px;
+  }
+ .contentAbout{
+    width: 80%;
+    top:65%;
+  }
+  .aboutText h3{
+    font-size: 28px;
+  }
+  .innerTitle{
+    font-size: 22px;
+  }
+  .innerContent{
+    font-size: 20px;
+  }
+    .partsOfEducation{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+  }
+  .workPart{
+    width: 70%;
+  }
+   .educationPart{
+    width: 70%;
+  }
+  .partsOfEducation{
+    gap: 10px;
+  }
+  
+}
+@media  screen and (max-width: 525px) {
+  .aboutMe li p{
+    font-size: 20px;
+  }
+  .contentAbout{
+    width: 90%;
+    height: 450px;
+    top: 70%;
+  }
+  .innerTitle{
+    font-size: 20px;
+  }
+  .innerContent{
+    font-size: 18px;
+  }
+
+}
+@media  screen and (max-width: 425px) {
+  .contentAbout{
+    top: 85%;
+  }
+  .mediaLogo{
+    width: 60px;
+    height: 60px;
+  }
+  .computer{
+    width: 90%;
+  }
+  .aboutWork p{
+    font-size: 16px;
+  }
+   .visit{
+    font-size: 16px;
+   }
+   .mediaLogo{
+    width: 60px;
+    height: 60px;
+   }
+  .innerTitle{
+    font-size: 18px;
+  }
+  .innerContent{
+    font-size: 14px;
+  }
+}
+@media  screen and (max-width: 325px) {
+  .allow{
+    display: none;
+  }
+  .mediaLogo{
+    width: 50px;
+    height: 50px;
+  }
+  .aboutText p{
+    font-size: 16px;
+  }
+  .aboutText h3 {
+    font-size: 22px;
+}
+.visit{
+  font-size: 14px;
+}
+.innerContent{
+      font-size: 12px
+}
+.work{
+  height: 100px;
+}
+}
+@media  screen and (max-width: 300px) {
+
+  #front{
+    font-size: 35px;
+  }
+  .contentAbout{
+    height: 500px;
+    top: 70%;
+    padding: 20px
+  }
+  .mediaLogo{
+    display: none;
+  }
+  .links{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .link{
+    width: 33%;
+  }
+  .link a{
+    width: 100%;
+  }
+  .logo{
+    width: 100px;
+    height: 100px;
+  } .avatar{
+    width: 100px;
+    height: 100px;
+  }
+  .aboutMe li p {
+    font-size: 17px;
+}
 }

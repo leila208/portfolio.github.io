@@ -6,24 +6,19 @@ document.addEventListener("mousemove", (e) => {
   let y = e.pageY;
   cursor.style.top = y + "px";
   cursor.style.left = x + "px";
-    cursor.style.display = "block";
-    function mouseStopped() {
-        cursor.style.display = "none";
-    }
-    clearTimeout(timeout);
-    timeout = setTimeout(mouseStopped, 1000);
+  cursor.style.display = "block";
+  function mouseStopped() {
+    cursor.style.display = "none";
+  }
+  clearTimeout(timeout);
+  timeout = setTimeout(mouseStopped, 1000);
 });
 document.addEventListener("mouseout", () => {
   cursor.style.display = "none";
 });
 //animatedText
 
-const words = [
- 
-  "Web Developer. ",
-  "Frontend Developer. ",
-  
-];
+const words = ["Web Developer. ", "Frontend Developer. "];
 let index = 0;
 const paragraph = document.getElementById("front");
 const staticText = "Hi, I'm Leyla and I'm a ";
@@ -72,5 +67,8 @@ function eraseWord() {
 
 typeWord();
 
+var ekranGenisligi = window.innerWidth;
 
-
+if (ekranGenisligi < 245) {
+  document.body.innerHTML = "<h1 >Please use another device</h1>";
+}
